@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Music Player</title>
+            <link rel="stylesheet" href="musicplayer.css">
+            <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+            
+        </head>
+
+        <body>
+            <div class="wrapper">
+                <div class="top-bar">
+                    <img src="icons/expand_more_FILL0_wght400_GRAD0_opsz48.svg" alt="expand-more" class="icons">
+                    <span>Now Playing</span>
+                    <img src="icons/more_horiz_FILL0_wght400_GRAD0_opsz48.svg" alt="more-horiz" class="icons">
+                </div>
+
+                <div class="img-area">
+                    <img src="covers/nirvana-nevermind.jpg" alt="nevermind">
+                </div>
+
+                <div class="song-details">
+                    <p class="name"></p>
+                    <p class="artist"></p>
+                </div>
+
+                <div class="progress-area">
+                    <div class="progress-bar"></div>
+                    <div class="timer">
+                        <span class="current"></span>
+                        <span class="duration"></span>
+                    </div>
+                    <audio id="main-audio" src=""></audio>
+                </div>
+
+                <div class="controls">
+                    <img id="repeat-plist" src="icons/repeat_FILL0_wght400_GRAD0_opsz48.svg" alt="repeat" title="Playlist looped" class="icons">
+                    <img id="prev" src="icons/skip_previous_FILL0_wght400_GRAD0_opsz48.svg" alt="prev" class="icons">
+                    <div class="play-pause">
+                        <img id="playOrpause" src="icons/play_arrow_FILL0_wght400_GRAD0_opsz48.svg" alt="idk" class="play-pause">
+                        
+                    </div>
+                    <img id="next" src="icons/skip_next_FILL0_wght400_GRAD0_opsz48.svg" alt="next" class="icons">
+                    <img id="more-music" src="icons/queue_music_FILL0_wght400_GRAD0_opsz48.svg" alt="more-music" class="icons">
+                </div>
+
+                <div class="music-list">
+                    <div class="header">
+                        <div class="row">
+                            <img id="more-music-below" src="icons/queue_music_FILL0_wght400_GRAD0_opsz48.svg" alt="more-music" class="icons">
+                            <span>Music list</span>
+                        </div>
+                        <img id="close" src="icons/close_FILL0_wght400_GRAD0_opsz48.svg" alt="close" class="material-icons">
+                    </div>
+                <ul>
+            
+                </ul>
+                </div>
+
+                
+            </div>
+
+            <script src="music-list.js"></script>
+            <script src="sctipt.js"></script>
+        </body>
+    </html>
